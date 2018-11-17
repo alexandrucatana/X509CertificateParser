@@ -18,4 +18,6 @@ So that the above information can be read, this parser provides all important Ob
 and sequences for information needed in Subject/Issuer Names (i.e. country, state, organizational unit), 
 DER Tags and OIDs of the most used encryption algorithms.  
 
+As an example, you may also find a X509 Certificate under the name corleone_certificate.der.
+
 In the future, the parser will also provide information about Certificate Extensions, including, of course, their OIDs. 
