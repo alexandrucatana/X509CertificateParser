@@ -20,7 +20,7 @@ add_library(cryptopp  STATIC IMPORTED)
 if (UNIX)
     set_target_properties(cryptopp  PROPERTIES
      IMPORTED_LOCATION "/usr/local/lib/libcryptopp.a"
-      INTERFACE_INCLUDE_DIRECTORIES "/usr/local/include/crpyptopp/"
+      INTERFACE_INCLUDE_DIRECTORIES "/usr/local/include/cryptopp"
     )
 endif(UNIX)
 
