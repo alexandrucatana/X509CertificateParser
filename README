@@ -1,0 +1,21 @@
+This a X509 Certificate parser written by means of Wei Dai'scryptopp library. You will see that
+the big chunks of X509 Certificate consist of DER Sequences and cryptopp comes at rescue by providing 
+the BERSequenceDecoder class which reads a DER sequence chunk and offers access to very useful methods 
+like Get, Peek, MaxRetrieval and SkipAll. 
+
+So this parser does nothing else than read sequence by sequence from a X509 Certificate file providing at the end information about :
+
+1. Certificate version
+2. Serial number
+3. Algorithm type
+4. Issuer Name
+5. Validity
+6. Subject Name
+7. Subject Public Key Information 
+8. Private Key
+
+So that the above information can be read, this parser provides all important Object Identifier hex byte arrays 
+and sequences for information needed in Subject/Issuer Names (i.e. country, state, organizational unit), 
+DER Tags and OIDs of the most used encryption algorithms.  
+
+In the future, the parser will also provide information about Certificate Extensions, including, of course, their OIDs. 
