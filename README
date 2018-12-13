@@ -1,4 +1,4 @@
-This a X509 Certificate parser written by means of Wei Dai'scryptopp library. You will see that
+This a X509 Certificate parser written by means of Wei Dai's cryptopp library. You will see that
 the big chunks of X509 Certificate consist of DER Sequences and cryptopp comes at rescue by providing 
 the BERSequenceDecoder class which reads a DER sequence chunk and offers access to very useful methods 
 like Get, Peek, MaxRetrieval and SkipAll. 
